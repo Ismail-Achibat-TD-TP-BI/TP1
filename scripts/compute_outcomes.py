@@ -21,8 +21,17 @@ SCORE_BRACKETS = [(0.0, 0.3), (0.3, 0.6), (0.6, 1.01)]
 def load_tracker():
     if not os.path.exists(TRACKER_PATH):
         return []
-    with open(TRACKER_PATH) as f:
-        return list(csv.DictReader(f))
+    # The tracker is hand-edited in whatever editor/encoding the user has --
+    # real observed case: saved as ISO-8859-1 (Latin-1) by the editor, not
+    # UTF-8, which crashes a plain utf-8 open() the moment an accented
+    # character (e.g. "Developpeur", "Credit") appears. Try UTF-8 first,
+    # fall back to Latin-1 rather than assuming the file is well-formed.
+    try:
+        with open(TRACKER_PATH, encoding="utf-8") as f:
+            return list(csv.DictReader(f))
+    except UnicodeDecodeError:
+        with open(TRACKER_PATH, encoding="latin-1") as f:
+            return list(csv.DictReader(f))
 
 def main():
     rows = load_tracker()
