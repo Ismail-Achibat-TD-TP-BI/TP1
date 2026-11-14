@@ -1,5 +1,7 @@
 # Smart Internship Match
 
+Dashboard link: https://ismail-achibat-td-tp-bi.github.io/TP1/
+
 A personal decision-support pipeline for an internship search: fetch real postings,
 structure them with a local LLM, score them against my own skills, draft grounded
 cover-letter openings for the best matches, and track outcomes — covered end to end
