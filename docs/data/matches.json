@@ -1,0 +1,859 @@
+{
+  "generated_at": "2026-11-14T09:49:57Z",
+  "n_offers": 30,
+  "offers": [
+    {
+      "id": "jooble_7088915134701398182",
+      "source": "jooble",
+      "title": "Stage - 3 à - Développeur Python & Api - Automatisation H/F",
+      "company": "BPCE Infogérance & Technologies",
+      "location": "Lezennes, 59260",
+      "url": "https://fr.jooble.org/desc/7088915134701398182",
+      "is_apprenticeship": false,
+      "accessible_disability": false,
+      "publishable": true,
+      "required_skills": [
+        "Python"
+      ],
+      "responsibilities": [
+        "Participer à des projets informatiques challengeants",
+        "Développement Python et conception d'..."
+      ],
+      "experience_required": "Tu prépares un Bac +3 à Bac +5 et tu recherches un stage supérieur à 2 mois",
+      "compensation_mentioned": null,
+      "score": 0.92,
+      "coverage": 1.0,
+      "matched": [
+        "Python"
+      ],
+      "gaps": []
+    },
+    {
+      "id": "jooble_1703768110926899314",
+      "source": "jooble",
+      "title": "STAGE - Ingénieur Développement d'Applet Secure Element - F/H",
+      "company": "Thales",
+      "location": "Meudon, Hauts-de-Seine",
+      "url": "https://fr.jooble.org/jdp/1703768110926899314",
+      "is_apprenticeship": false,
+      "accessible_disability": false,
+      "publishable": true,
+      "required_skills": [
+        "Java"
+      ],
+      "responsibilities": [],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "score": 0.76,
+      "coverage": 1.0,
+      "matched": [
+        "Java"
+      ],
+      "gaps": []
+    },
+    {
+      "id": "jooble_3311230931844231363",
+      "source": "jooble",
+      "title": "Software Engineer H/F",
+      "company": "Crédit Agricole",
+      "location": "La Défense",
+      "url": "https://fr.jooble.org/jdp/3311230931844231363",
+      "is_apprenticeship": false,
+      "accessible_disability": false,
+      "publishable": true,
+      "required_skills": [
+        "JAVA"
+      ],
+      "responsibilities": [
+        "développement en JAVA",
+        "Programmation"
+      ],
+      "experience_required": "Tu disposes d’une expérience en tant qu’étudiant (stage, projets d’étude)",
+      "compensation_mentioned": null,
+      "score": 0.76,
+      "coverage": 1.0,
+      "matched": [
+        "Java"
+      ],
+      "gaps": []
+    },
+    {
+      "id": "jooble_-8451058230780003759",
+      "source": "jooble",
+      "title": "STAGE- Ingénieur Développement Web - Equipement de Mesures Hyperfréquences - F/H",
+      "company": "THALES",
+      "location": "Toulouse",
+      "url": "https://fr.jooble.org/away/-8451058230780003759",
+      "is_apprenticeship": false,
+      "accessible_disability": false,
+      "publishable": true,
+      "required_skills": [
+        "Informatique",
+        "Systèmes"
+      ],
+      "responsibilities": [
+        "Concevoir et réaliser une interface WEB dédiée",
+        "Inspiration à partir de l'accessibilité et de l'expérience utilisateur de ces outils"
+      ],
+      "experience_required": "un diplôme de niveau Bac+5",
+      "compensation_mentioned": null,
+      "score": 0.62,
+      "coverage": 0.5,
+      "matched": [
+        "Systèmes agentiques"
+      ],
+      "gaps": [
+        "informatique"
+      ]
+    },
+    {
+      "id": "jooble_5880424794299556718",
+      "source": "jooble",
+      "title": "STAGE - Ingénieur DevOps : mise à hauteur chaine CI/CD Logiciel Radar F/H",
+      "company": "THALES",
+      "location": "Bordeaux",
+      "url": "https://fr.jooble.org/away/5880424794299556718",
+      "is_apprenticeship": false,
+      "accessible_disability": false,
+      "publishable": true,
+      "required_skills": [
+        "DevOps",
+        "Jenkins",
+        "GitlabCI",
+        "Docker",
+        "Podman",
+        "OS linux",
+        "scripting",
+        "bash",
+        "python"
+      ],
+      "responsibilities": [
+        "Découvrir le secteur des radars"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "score": 0.453,
+      "coverage": 0.222,
+      "matched": [
+        "Docker",
+        "Python"
+      ],
+      "gaps": [
+        "bash",
+        "devops",
+        "gitlabci",
+        "jenkins",
+        "os linux",
+        "podman",
+        "scripting"
+      ]
+    },
+    {
+      "id": "jooble_-3687563716301959617",
+      "source": "jooble",
+      "title": "Technicien Informatique H/F",
+      "company": "Evolutis",
+      "location": "Roanne, 42300",
+      "url": "https://fr.jooble.org/away/-3687563716301959617",
+      "is_apprenticeship": false,
+      "accessible_disability": false,
+      "publishable": true,
+      "required_skills": [
+        "cybersécurité"
+      ],
+      "responsibilities": [
+        "internaliser une partie de l'infogérance",
+        "gagner en réactivité auprès des utilisateurs",
+        "démarche de conformité"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [
+        "cybersécurité"
+      ]
+    },
+    {
+      "id": "jooble_7849166867612865998",
+      "source": "jooble",
+      "title": "Stage - Technicien - Développeur Web - (H/F)",
+      "company": "THALES",
+      "location": "Cannes, Alpes-Maritimes",
+      "url": "https://fr.jooble.org/away/7849166867612865998",
+      "is_apprenticeship": false,
+      "accessible_disability": false,
+      "publishable": true,
+      "required_skills": [
+        "développeur web"
+      ],
+      "responsibilities": [
+        "Votre priorité est de...  ...?"
+      ],
+      "experience_required": "BAC+3",
+      "compensation_mentioned": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [
+        "développeur web"
+      ]
+    },
+    {
+      "id": "jooble_6881105131163630338",
+      "source": "jooble",
+      "title": "STAGE - Technicienne / Technicien informatique",
+      "company": "ArianeGroup",
+      "location": "Le Haillan, Gironde",
+      "url": "https://fr.jooble.org/away/6881105131163630338",
+      "is_apprenticeship": false,
+      "accessible_disability": false,
+      "publishable": true,
+      "required_skills": [
+        "Photogrammétrie"
+      ],
+      "responsibilities": [
+        "réaliser une étude de faisabilité",
+        "migration d'un système de Photogrammétrie"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [
+        "photogrammétrie"
+      ]
+    },
+    {
+      "id": "jooble_8562433707702725201",
+      "source": "jooble",
+      "title": "Quantitative Développeur (H/F)",
+      "company": "Meritis",
+      "location": "Paris",
+      "url": "https://fr.jooble.org/jdp/8562433707702725201",
+      "is_apprenticeship": false,
+      "accessible_disability": false,
+      "publishable": true,
+      "required_skills": [
+        "informatique",
+        "mathématiques appliquées",
+        "finance quantitative",
+        "ingénierie"
+      ],
+      "responsibilities": [
+        "optimisation des ressources de financement et de liquidité"
+      ],
+      "experience_required": "ou de master universitaire (Bac +5)",
+      "compensation_mentioned": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [
+        "finance quantitative",
+        "informatique",
+        "ingénierie",
+        "mathématiques appliquées"
+      ]
+    },
+    {
+      "id": "jooble_2739217705954366717",
+      "source": "jooble",
+      "title": "STAGE - DevOps : Modernisation d’un environnement CI/CD - F/H",
+      "company": "THALES",
+      "location": "Gennevilliers, Hauts-de-Seine",
+      "url": "https://fr.jooble.org/away/2739217705954366717",
+      "is_apprenticeship": false,
+      "accessible_disability": false,
+      "publishable": true,
+      "required_skills": [
+        "Linux",
+        "ligne de commande"
+      ],
+      "responsibilities": [
+        "Partager vos découvertes avec l'équipe"
+      ],
+      "experience_required": "Vous préparez un Bac+5 en école d'ingénieur (informatique, télécommunications ou réseaux) et vous recherchez un stage de 6 mois",
+      "compensation_mentioned": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [
+        "ligne de commande",
+        "linux"
+      ]
+    },
+    {
+      "id": "jooble_3029946582470773413",
+      "source": "jooble",
+      "title": "STAGE - Technicien informatique industrielle - F/H",
+      "company": "THALES",
+      "location": "Bordeaux",
+      "url": "https://fr.jooble.org/away/3029946582470773413",
+      "is_apprenticeship": false,
+      "accessible_disability": false,
+      "publishable": true,
+      "required_skills": [
+        "technologies informatiques industrielles"
+      ],
+      "responsibilities": [
+        "...documentation associée aux solutions développées"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [
+        "technologies informatiques industrielles"
+      ]
+    },
+    {
+      "id": "jooble_1808054744155726405",
+      "source": "jooble",
+      "title": "STAGE - S3NS - Ingénieur DEVOPS - Parcours d'onboarding sur SI Administration (H/F)",
+      "company": "THALES",
+      "location": "Paris",
+      "url": "https://fr.jooble.org/away/1808054744155726405",
+      "is_apprenticeship": false,
+      "accessible_disability": false,
+      "publishable": true,
+      "required_skills": [
+        "Big Query",
+        "Metabase"
+      ],
+      "responsibilities": [
+        "Rendre disponibles certaines données opérationnelles présentes dans différents systèmes de notre Si d'administration"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [
+        "big query",
+        "metabase"
+      ]
+    },
+    {
+      "id": "jooble_4165190390933087600",
+      "source": "jooble",
+      "title": "STAGE - Ingénieur DevOps F/H",
+      "company": "THALES",
+      "location": "Brest",
+      "url": "https://fr.jooble.org/away/4165190390933087600",
+      "is_apprenticeship": false,
+      "accessible_disability": false,
+      "publishable": true,
+      "required_skills": [],
+      "responsibilities": [
+        "étudier de faisabilité et d'impact d'une migration des",
+        "étudier la possibilité de remplacer les systèmes"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": []
+    },
+    {
+      "id": "jooble_-3588924043192683948",
+      "source": "jooble",
+      "title": "STAGE - S3NS - INGENIEUR DEVOPS (H/F)",
+      "company": "THALES",
+      "location": "Paris",
+      "url": "https://fr.jooble.org/away/-3588924043192683948",
+      "is_apprenticeship": false,
+      "accessible_disability": false,
+      "publishable": true,
+      "required_skills": [],
+      "responsibilities": [
+        "Concevoir un outil simplifiant le provisionnement des comptes opérateurs et administrateurs",
+        "Implémenter un outil simplifiant le provisionnement des comptes opérateurs et administrateurs",
+        "Documenter un outil simplifiant le provisionnement des comptes opérateurs et administrateurs"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": []
+    },
+    {
+      "id": "jooble_2155263663796378199",
+      "source": "jooble",
+      "title": "STAGE - Ingénieur développement Web & Framework de tests automatisés - F/H",
+      "company": "THALES",
+      "location": "Brive-la-Gaillarde, Corrèze",
+      "url": "https://fr.jooble.org/away/2155263663796378199",
+      "is_apprenticeship": false,
+      "accessible_disability": false,
+      "publishable": true,
+      "required_skills": [
+        "informatique",
+        "génie logiciel"
+      ],
+      "responsibilities": [
+        "intervenir sur un projet concret de développement",
+        "des essais et à l'orchestration d'instruments de mesure"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [
+        "génie logiciel",
+        "informatique"
+      ]
+    },
+    {
+      "id": "jooble_7134762695195783415",
+      "source": "jooble",
+      "title": "STAGE - Ingénieur Développement et amélioration d'outil - F/H",
+      "company": "Thales",
+      "location": "Toulouse",
+      "url": "https://fr.jooble.org/jdp/7134762695195783415",
+      "is_apprenticeship": false,
+      "accessible_disability": false,
+      "publishable": true,
+      "required_skills": [
+        "script de vérification"
+      ],
+      "responsibilities": [
+        "développer un script de vérification qui aiderait"
+      ],
+      "experience_required": "formation de niveau Bac+4 ou Bac+5 à dominante Informatique",
+      "compensation_mentioned": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [
+        "script de vérification"
+      ]
+    },
+    {
+      "id": "jooble_7541705640803783142",
+      "source": "jooble",
+      "title": "Stage Développeur Unreal Engine VR",
+      "company": "Delusion",
+      "location": "Cergy, Val-d'Oise",
+      "url": "https://fr.jooble.org/jdp/7541705640803783142",
+      "is_apprenticeship": false,
+      "accessible_disability": false,
+      "publishable": true,
+      "required_skills": [],
+      "responsibilities": [
+        "Effectuer un stage rémunéré et conventionné"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": []
+    },
+    {
+      "id": "jooble_3257682394278124706",
+      "source": "jooble",
+      "title": "STAGE - Ingénieur DevOps/ Cloud - Étude et intégration d’un socle d’échange de données aéronautiques SWIM - F/H",
+      "company": "THALES",
+      "location": "Toulouse",
+      "url": "https://fr.jooble.org/away/3257682394278124706",
+      "is_apprenticeship": false,
+      "accessible_disability": false,
+      "publishable": true,
+      "required_skills": [
+        "développement"
+      ],
+      "responsibilities": [
+        "travailler sur des solutions de cyberdéfense souveraines",
+        "faire face aux menaces informatiques croissantes",
+        "participer aux activités de services numériques"
+      ],
+      "experience_required": "stage de 6 mois",
+      "compensation_mentioned": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [
+        "développement"
+      ]
+    },
+    {
+      "id": "jooble_5238479830699152796",
+      "source": "jooble",
+      "title": "STAGE - Ingénieur DevOps Réseaux d’infrastructure - F/H",
+      "company": "THALES",
+      "location": "Gennevilliers, Hauts-de-Seine",
+      "url": "https://fr.jooble.org/away/5238479830699152796",
+      "is_apprenticeship": false,
+      "accessible_disability": false,
+      "publishable": true,
+      "required_skills": [
+        "réseaux",
+        "automatisation",
+        "ingénierie logicielle"
+      ],
+      "responsibilities": [
+        "participer à la mise en œuvre et à l'évolution de"
+      ],
+      "experience_required": "en école d'ingénieur ou équivalent, avec une spécialisation en informatique, DevOps ou réseaux",
+      "compensation_mentioned": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [
+        "automatisation",
+        "ingénierie logicielle",
+        "réseaux"
+      ]
+    },
+    {
+      "id": "jooble_-7682570610562542123",
+      "source": "jooble",
+      "title": "STAGE - Ingénieur développement IHM Web - F/H",
+      "company": "THALES",
+      "location": "Cholet, Maine-et-Loire",
+      "url": "https://fr.jooble.org/away/-7682570610562542123",
+      "is_apprenticeship": false,
+      "accessible_disability": false,
+      "publishable": true,
+      "required_skills": [
+        "Bac+5"
+      ],
+      "responsibilities": [
+        "Préparation d'un stage de 6 mois dans une formation en informatique, développement web, UX/UI ou sciences cognitives"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [
+        "bac+5"
+      ]
+    },
+    {
+      "id": "jooble_96603616527061090",
+      "source": "jooble",
+      "title": "STAGE- Ingénieur DevOps/ IA - Conception d'une plateforme de gestion projets logiciels - F/H",
+      "company": "THALES",
+      "location": "Toulouse",
+      "url": "https://fr.jooble.org/away/96603616527061090",
+      "is_apprenticeship": false,
+      "accessible_disability": false,
+      "publishable": true,
+      "required_skills": [],
+      "responsibilities": [],
+      "experience_required": "Vous effectuez une formation de niveau Bac+5 , en...",
+      "compensation_mentioned": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": []
+    },
+    {
+      "id": "jooble_2316317962261374395",
+      "source": "jooble",
+      "title": "STAGE - Développeur d'outils d'analyse de logs - F/H",
+      "company": "Thales",
+      "location": "Cholet, Maine-et-Loire",
+      "url": "https://fr.jooble.org/jdp/2316317962261374395",
+      "is_apprenticeship": false,
+      "accessible_disability": false,
+      "publishable": true,
+      "required_skills": [
+        "scripting"
+      ],
+      "responsibilities": [
+        "mettre vos compétences en informatique au service de l'automatisation",
+        "mettre vos compétences en informatique au service de l'analyse de données"
+      ],
+      "experience_required": "Bac+2 à Bac+5",
+      "compensation_mentioned": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [
+        "scripting"
+      ]
+    },
+    {
+      "id": "jooble_6416250680447643549",
+      "source": "jooble",
+      "title": "Stage - Développeur Solutions Technologiques du Si - Lille H/F",
+      "company": "BPCE Solutions informatiques",
+      "location": "Villeneuve-d'Ascq, Nord",
+      "url": "https://fr.jooble.org/desc/6416250680447643549",
+      "is_apprenticeship": false,
+      "accessible_disability": false,
+      "publishable": true,
+      "required_skills": [],
+      "responsibilities": [
+        "être accompagné(e) et encouragé(e) par une...",
+        "explorer la diversité du terrain de jeu que propose BPCE Solutions informatiques"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": []
+    },
+    {
+      "id": "jooble_1716913616408606982",
+      "source": "jooble",
+      "title": "Offre de stage - Informatique Support & Systèmes (H/F)",
+      "company": "Groupe Poisson",
+      "location": "Seine-et-Marne (77)",
+      "url": "https://fr.jooble.org/jdp/1716913616408606982",
+      "is_apprenticeship": false,
+      "accessible_disability": false,
+      "publishable": true,
+      "required_skills": [
+        "Diagnostic matériel",
+        "PC",
+        "imprimantes",
+        "périphériques"
+      ],
+      "responsibilities": [
+        "Diagnostic matériel (PC, imprimantes, périphériques)",
+        "Recherche...",
+        "Proposition d'outils d'aide au pilotage pour les équipes"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": "Gratification légale",
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [
+        "diagnostic matériel",
+        "imprimantes",
+        "pc",
+        "périphériques"
+      ]
+    },
+    {
+      "id": "jooble_-4971406116888691805",
+      "source": "jooble",
+      "title": "STAGE - IA et DevOps : automatisation de l'intégration logicielle - F/H",
+      "company": "THALES",
+      "location": "Gennevilliers, Hauts-de-Seine",
+      "url": "https://fr.jooble.org/away/-4971406116888691805",
+      "is_apprenticeship": false,
+      "accessible_disability": false,
+      "publishable": true,
+      "required_skills": [
+        "informatique"
+      ],
+      "responsibilities": [
+        "Rédiger la base documentaire",
+        "Vous"
+      ],
+      "experience_required": "école d'ingénieur ou en master (Bac+5)",
+      "compensation_mentioned": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [
+        "informatique"
+      ]
+    },
+    {
+      "id": "jooble_-2721767918300646723",
+      "source": "jooble",
+      "title": "Stage - Ingénieur Informatique, Conception et Développement Web des Interfaces web de contrôle de satellites - (H/F)",
+      "company": "THALES",
+      "location": "Cannes, Alpes-Maritimes",
+      "url": "https://fr.jooble.org/away/-2721767918300646723",
+      "is_apprenticeship": false,
+      "accessible_disability": false,
+      "publishable": true,
+      "required_skills": [
+        "Cypress",
+        "DevOps"
+      ],
+      "responsibilities": [
+        "Concevoir et..."
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [
+        "cypress",
+        "devops"
+      ]
+    },
+    {
+      "id": "jooble_6804366522642640777",
+      "source": "jooble",
+      "title": "Développeur en intelligence artificielle H/F",
+      "company": "Aubert",
+      "location": "Cernay, Haut-Rhin",
+      "url": "https://fr.jooble.org/jdp/6804366522642640777",
+      "is_apprenticeship": false,
+      "accessible_disability": false,
+      "publishable": true,
+      "required_skills": [],
+      "responsibilities": [
+        "Rejoignez Aubert et participez au déploiement de l’IA dans nos métiers",
+        "Dans le cadre de la modernisation de ses outils et de ses méthodes de travail"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": []
+    },
+    {
+      "id": "jooble_1168880627114806772",
+      "source": "jooble",
+      "title": "Stage Informatique Développement de Solution de Lecture et d'Analyse des Schémas Électroniques H/F",
+      "company": "MBDA",
+      "location": "Le Plessis-Robinson, Hauts-de-Seine",
+      "url": "https://fr.jooble.org/desc/1168880627114806772",
+      "is_apprenticeship": false,
+      "accessible_disability": false,
+      "publishable": true,
+      "required_skills": [
+        "Informatique",
+        "Programmation"
+      ],
+      "responsibilities": [
+        "Développer une solution intelligente de lecture et d'"
+      ],
+      "experience_required": "1 année de cycle ingénieur ou équivalent",
+      "compensation_mentioned": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [
+        "informatique",
+        "programmation"
+      ]
+    },
+    {
+      "id": "jooble_9093435268999310259",
+      "source": "jooble",
+      "title": "STAGE - Ingénieur.e développement - Optimisation et IA Agentique (F/H)",
+      "company": "Dassault Systèmes",
+      "location": "Vélizy-Villacoublay, Yvelines",
+      "url": "https://fr.jooble.org/jdp/9093435268999310259",
+      "is_apprenticeship": false,
+      "accessible_disability": false,
+      "publishable": true,
+      "required_skills": [
+        "Informatique",
+        "IA",
+        "RO"
+      ],
+      "responsibilities": [
+        "développer",
+        "évaluer l’applicabilité"
+      ],
+      "experience_required": "en Ecole d’ingénieur ou Université",
+      "compensation_mentioned": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [
+        "ia",
+        "informatique",
+        "ro"
+      ]
+    },
+    {
+      "id": "jooble_-1599387348654358214",
+      "source": "jooble",
+      "title": "Stagiaire Administrateur Systèmes et Réseaux H/F",
+      "company": "PARTHENA CONSULTANT",
+      "location": "Boulogne-Billancourt",
+      "url": "https://fr.jooble.org/desc/-1599387348654358214",
+      "is_apprenticeship": false,
+      "accessible_disability": false,
+      "publishable": true,
+      "required_skills": [],
+      "responsibilities": [
+        "Travailler en lien avec le Responsable Informatique et l'Administrateur Systèmes et Réseaux de Proximité du groupe",
+        "Gérer l'infrastructure et réseau informatique"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": []
+    }
+  ],
+  "top_skill_gaps": [
+    {
+      "skill": "informatique",
+      "count": 6
+    },
+    {
+      "skill": "devops",
+      "count": 2
+    },
+    {
+      "skill": "scripting",
+      "count": 2
+    },
+    {
+      "skill": "bash",
+      "count": 1
+    },
+    {
+      "skill": "gitlabci",
+      "count": 1
+    },
+    {
+      "skill": "jenkins",
+      "count": 1
+    },
+    {
+      "skill": "os linux",
+      "count": 1
+    },
+    {
+      "skill": "podman",
+      "count": 1
+    },
+    {
+      "skill": "cybersécurité",
+      "count": 1
+    },
+    {
+      "skill": "développeur web",
+      "count": 1
+    }
+  ],
+  "top_matched_skills": [
+    {
+      "skill": "Python",
+      "count": 2,
+      "level": 4
+    },
+    {
+      "skill": "Java",
+      "count": 2,
+      "level": 2
+    },
+    {
+      "skill": "Systèmes agentiques",
+      "count": 1,
+      "level": 4
+    },
+    {
+      "skill": "Docker",
+      "count": 1,
+      "level": 4
+    }
+  ],
+  "n_offers_with_compensation": 1
+}

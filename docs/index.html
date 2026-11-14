@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Smart Internship Match — dashboard</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 960px; margin: 2rem auto; padding: 0 1rem; }
+  nav a { margin-right: 1rem; }
+  h2 { margin-top: 2.5rem; }
+  .section-for { font-size: 0.75rem; color: #666; text-transform: uppercase; letter-spacing: 0.03em; }
+  .kpis { display: flex; gap: 1rem; flex-wrap: wrap; margin: 1rem 0; }
+  .kpi { flex: 1; min-width: 160px; padding: 0.8rem 1rem; border: 1px solid #ccc; border-radius: 8px; }
+  .kpi .value { font-size: 1.5rem; font-weight: bold; color: #0d7c9e; }
+  .kpi .label { font-size: 0.8rem; color: #666; }
+  #assumptions { font-size: 0.85rem; color: #444; padding: 0.8rem 1rem; border-left: 3px solid #c46e0a; background: #faf3e8; margin: 1rem 0; }
+  #assumptions ul { margin: 0.4rem 0 0; padding-left: 1.2rem; }
+  .empty-note { padding: 0.8rem 1rem; border: 1px dashed #999; border-radius: 8px; color: #555; font-size: 0.9rem; }
+  canvas { margin-top: 1rem; }
+  #updated { color: #666; font-size: 0.85rem; margin-top: 2rem; }
+</style>
+</head>
+<body>
+  <nav><strong>Dashboard</strong> | <a href="sanity.html">Raw data (sanity check)</a></nav>
+  <h1>Smart Internship Match</h1>
+  <p>A personal decision-support dashboard for an internship search: real postings, matched against my own skills, tracked through to outcomes.</p>
+
+  <div id="assumptions">
+    <strong>Provenance and known limits of this run:</strong>
+    <ul>
+      <li>Source: <strong>Jooble</strong> (an officially issued API key), not France Travail — the "Offres d'emploi v2" scope was never granted on this course's francetravail.io application (a real token request returned <code>invalid_client</code>).</li>
+      <li>Jooble returns a short, pre-truncated snippet (~300 chars), not the full posting text — expect weaker skill extraction than a full-text source would give.</li>
+      <li>Matching score = 60% coverage of the offer's stated skills + 40% my own self-assessed level (1-5) on the skills I matched — a deliberate two-factor construct, not a neutral count. See REPORT.md for the full argument.</li>
+      <li>A generic word like "informatique" sometimes shows up as a "skill gap" below — a real, observed extraction error (the model occasionally extracts the domain name itself as if it were a skill), not a genuine thing to learn.</li>
+    </ul>
+  </div>
+
+  <h2>Pipeline health</h2>
+  <div class="section-for">For: me, checking the pipeline is actually working before trusting anything downstream</div>
+  <p>Three cards, not a chart — with one source and one run, there's no second category to compare against yet; a chart here would have nothing real to show.</p>
+  <div class="kpis" id="pipelineKpis">Loading...</div>
+
+  <h2>Search effectiveness</h2>
+  <div class="section-for">For: me, deciding which offers to actually act on and what to learn next</div>
+
+  <h3>Match-score distribution (histogram → bar chart)</h3>
+  <p>The decision this supports is "is my search producing real candidates, or mostly noise?" — a histogram is the standard chart for seeing a distribution's shape at a glance, which a table of 30 individual scores wouldn't show as clearly.</p>
+  <canvas id="scoreHistChart" height="220"></canvas>
+
+  <h3>What's most in demand that I'm missing vs. already strong in (ranked bars)</h3>
+  <p>Two rankings, not one: "what to learn next" (gaps) and "what to lead with" (matched strengths) are different, actionable questions — a ranked bar is the right type for both, same reasoning as every other "ranking → bar chart" in this course, because each bar is one specific thing I could actually act on.</p>
+  <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+    <div style="flex:1; min-width:320px;"><canvas id="gapsChart" height="260"></canvas></div>
+    <div style="flex:1; min-width:320px;"><canvas id="matchedChart" height="260"></canvas></div>
+  </div>
+
+  <h2>Outcome</h2>
+  <div class="section-for">For: me, deciding whether to keep applying the same way or change approach</div>
+  <div class="kpis" id="outcomeKpis">Loading...</div>
+
+  <h3>Does my own match score actually predict a response? (not just "more applications, faster")</h3>
+  <p>Response rate broken down by score bracket, rather than one overall number — this is the one KPI here that questions the pipeline itself: if low-score offers respond just as often as high-score ones, the scoring formula isn't actually earning its place. A bar per discrete bracket is the right type, same "discrete categories, not a continuum" logic as TD5's network-scenario chart.</p>
+  <div id="outcomeChartArea"></div>
+
+  <p id="updated"></p>
+
+<script>
+Promise.all([fetch('data/matches.json').then(r => r.json()), fetch('data/outcomes.json').then(r => r.json())])
+  .then(([matches, outcomes]) => {
+    const offers = matches.offers || [];
+
+    // --- Pipeline health ---
+    const nWithSkills = offers.filter(o => (o.required_skills || []).length > 0).length;
+    document.getElementById('pipelineKpis').innerHTML = `
+      <div class="kpi"><div class="value">${matches.n_offers}</div><div class="label">Offers analyzed (Jooble)</div></div>
+      <div class="kpi"><div class="value">${nWithSkills}/${matches.n_offers}</div><div class="label">Offers with ≥1 skill extracted</div></div>
+      <div class="kpi"><div class="value">${matches.n_offers_with_compensation}</div><div class="label">Offers stating a compensation figure</div></div>
+    `;
+
+    // --- Score histogram ---
+    const buckets = [0, 0.2, 0.4, 0.6, 0.8, 1.01];
+    const counts = new Array(buckets.length - 1).fill(0);
+    offers.forEach(o => {
+      for (let i = 0; i < buckets.length - 1; i++) {
+        if (o.score >= buckets[i] && o.score < buckets[i + 1]) { counts[i]++; break; }
+      }
+    });
+    new Chart(document.getElementById('scoreHistChart'), {
+      type: 'bar',
+      data: {
+        labels: ['0.0-0.2', '0.2-0.4', '0.4-0.6', '0.6-0.8', '0.8-1.0'],
+        datasets: [{ label: 'Offers', data: counts, backgroundColor: '#0d7c9e' }],
+      },
+      options: { plugins: { legend: { display: false }, title: { display: true, text: `Match score distribution (${offers.length} offers)` } },
+        scales: { y: { title: { display: true, text: 'Number of offers' } } } },
+    });
+
+    // --- Gaps / matched rankings ---
+    const gaps = matches.top_skill_gaps || [];
+    new Chart(document.getElementById('gapsChart'), {
+      type: 'bar',
+      data: { labels: gaps.map(g => g.skill), datasets: [{ label: 'Offers requiring this', data: gaps.map(g => g.count), backgroundColor: '#c46e0a' }] },
+      options: { indexAxis: 'y', plugins: { legend: { display: false }, title: { display: true, text: 'Top skill gaps' } } },
+    });
+    const matched = matches.top_matched_skills || [];
+    new Chart(document.getElementById('matchedChart'), {
+      type: 'bar',
+      data: { labels: matched.map(m => `${m.skill} (my level ${m.level}/5)`), datasets: [{ label: 'Offers matching this', data: matched.map(m => m.count), backgroundColor: '#2e8b46' }] },
+      options: { indexAxis: 'y', plugins: { legend: { display: false }, title: { display: true, text: 'Top matched strengths' } } },
+    });
+
+    // --- Outcome ---
+    document.getElementById('outcomeKpis').innerHTML = `
+      <div class="kpi"><div class="value">${outcomes.n_applications_sent}</div><div class="label">Applications sent</div></div>
+      <div class="kpi"><div class="value">${outcomes.n_responses}</div><div class="label">Responses received</div></div>
+      <div class="kpi"><div class="value">${outcomes.overall_response_rate !== null ? (outcomes.overall_response_rate * 100).toFixed(0) + '%' : '—'}</div><div class="label">Overall response rate</div></div>
+    `;
+
+    const brackets = outcomes.response_rate_by_score_bracket || [];
+    const hasAnyData = brackets.some(b => b.n_applied > 0);
+    if (!hasAnyData) {
+      document.getElementById('outcomeChartArea').innerHTML =
+        '<p class="empty-note">No applications tracked yet in data/applications/tracker.csv — ' +
+        'this chart will fill in honestly as the real search progresses. An empty chart here would be ' +
+        'misleading (zero tracked is not the same as "zero responses"), so a message is shown instead.</p>';
+    } else {
+      document.getElementById('outcomeChartArea').innerHTML = '<canvas id="outcomeChart" height="220"></canvas>';
+      new Chart(document.getElementById('outcomeChart'), {
+        type: 'bar',
+        data: { labels: brackets.map(b => b.score_range),
+          datasets: [{ label: 'Response rate', data: brackets.map(b => b.response_rate), backgroundColor: '#8b2ea0' }] },
+        options: { plugins: { legend: { display: false }, title: { display: true, text: 'Response rate by score bracket' } },
+          scales: { y: { min: 0, max: 1, title: { display: true, text: 'Response rate' } } } },
+      });
+    }
+
+    document.getElementById('updated').textContent =
+      `Matches last computed ${matches.generated_at} — outcomes last computed ${outcomes.generated_at}`;
+  })
+  .catch(err => {
+    document.getElementById('pipelineKpis').innerHTML = '<p>Could not load data (' + err + ').</p>';
+  });
+</script>
+</body>
+</html>

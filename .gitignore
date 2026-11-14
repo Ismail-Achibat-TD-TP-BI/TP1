@@ -1,0 +1,17 @@
+.env
+__pycache__/
+*.pyc
+
+output/cv_drafts/
+data/offers/jobspy_offers.json
+data/offers/merged_offers.json
+data/offers/structured_offers.json
+data/offers/matches_all_local.json
+
+# Personal application details -- filled in by hand, never published.
+# Only the aggregate (docs/data/outcomes.json) is committed.
+data/applications/tracker.csv
+
+# Operational state for the monitoring check -- not personal, not essential
+# to publish, kept local like the rest of this project's transient state.
+data/monitoring/last_check.json

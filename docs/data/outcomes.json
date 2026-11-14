@@ -1,0 +1,28 @@
+{
+  "generated_at": "2026-11-14T09:52:10Z",
+  "n_offers_tracked": 0,
+  "n_applications_sent": 0,
+  "n_responses": 0,
+  "overall_response_rate": null,
+  "response_rate_by_score_bracket": [
+    {
+      "score_range": "0.0-0.3",
+      "n_applied": 0,
+      "n_responded": 0,
+      "response_rate": null
+    },
+    {
+      "score_range": "0.3-0.6",
+      "n_applied": 0,
+      "n_responded": 0,
+      "response_rate": null
+    },
+    {
+      "score_range": "0.6-1.0",
+      "n_applied": 0,
+      "n_responded": 0,
+      "response_rate": null
+    }
+  ],
+  "note": "Empty/null values mean no applications have been tracked yet -- this is an honest 'no data', not a zero, since the tracker (data/applications/tracker.csv) is filled in by hand as the real search progresses, not generated."
+}
