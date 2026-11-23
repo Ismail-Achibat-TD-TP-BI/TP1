@@ -1,23 +1,11 @@
 {
-  "fetched_at": "2026-11-16T16:54:45Z",
+  "fetched_at": "2026-11-23T19:09:21Z",
   "search_params": {
     "keywords": "stage informatique",
     "location": "France"
   },
-  "total_count_reported": 43414,
+  "total_count_reported": 42366,
   "offers": [
-    {
-      "title": "Stage Ingénieur(e) Informatique Industrielle - Application FAO H/F",
-      "location": "Saint-Nazaire, 44600",
-      "snippet": "...compréhension des besoins de l'atelier jusqu'à la mise en oeuvre. \r\nLe stage se déroule entre bureau et terrain, au plus près des équipes...  ...des pièces dans les tôles et leur traduction dans l'outil informatique. \r\nContribuer à la conception des futurs processus liés à la...",
-      "salary": "",
-      "source": "tekkit.io",
-      "type": "",
-      "link": "https://fr.jooble.org/jdp/-2670096157928023443",
-      "company": "Chantiers de l'Atlantique",
-      "updated": "2026-11-15T00:00:00.0000000",
-      "id": -2670096157928023443
-    },
     {
       "title": "Stage Développeur Unreal Engine VR",
       "location": "Cergy, Val-d'Oise",
@@ -29,6 +17,18 @@
       "company": "Delusion",
       "updated": "2026-10-22T00:00:00.0000000",
       "id": 7541705640803783142
+    },
+    {
+      "title": "Stage - Développeur : API et connectivité H/F",
+      "location": "Cesson-Sévigné, Ille-et-Vilaine",
+      "snippet": "...Vous collaborerez avec des experts techniques pour analyser les données et mettre en place les outils nécessaires. \r\n Déroulement du stage : \r\n Ce stage de 6 mois, réalisé sur site, se déroulera en plusieurs phases : \r\n- Prise en main du sujet et de l’environnement...",
+      "salary": "",
+      "source": "icims.com",
+      "type": "Stage",
+      "link": "https://fr.jooble.org/jdp/1646044726339499526",
+      "company": "Orange SA",
+      "updated": "2026-11-16T00:00:00.0000000",
+      "id": 1646044726339499526
     },
     {
       "title": "STAGE - Ingénieur Développement et amélioration d'outil - F/H",
@@ -43,30 +43,6 @@
       "id": 2481302077477864658
     },
     {
-      "title": "Offre de stage - Informatique Support & Systèmes (H/F)",
-      "location": "Seine-et-Marne (77)",
-      "snippet": "...sécurité et aux actions d'amélioration\r\n \r\nParc & logistique informatique\r\n\r\n- Diagnostic matériel (PC, imprimantes, périphériques)\r\n- Recherche...  ...- Proposition d'outils d'aide au pilotage pour les équipes\r\nStage de 3 à 6 mois selon cursus - Gratification légale. \r\n\r\nPoste...",
-      "salary": "4.5 €/heure",
-      "source": "talentdetection.com",
-      "type": "Stage, Temps plein",
-      "link": "https://fr.jooble.org/jdp/1716913616408606982",
-      "company": "Groupe Poisson",
-      "updated": "2026-10-28T02:28:46.8195103+00:00",
-      "id": 1716913616408606982
-    },
-    {
-      "title": "Développeur en intelligence artificielle H/F",
-      "location": "Cernay, Haut-Rhin",
-      "snippet": "...STAGE – INTELLIGENCE ARTIFICIELLE & TRANSFORMATION DES MÉTIERS (H/F) Cernay (68) | Stage de 4 à 6 mois \r\n \r\n Rejoignez Aubert et participez au déploiement de l’IA dans nos métiers !\r\n Dans le cadre de la modernisation de ses outils et de ses méthodes de travail,  Aubert...",
-      "salary": "",
-      "source": "aubert.com",
-      "type": "Stage",
-      "link": "https://fr.jooble.org/jdp/6804366522642640777",
-      "company": "Aubert",
-      "updated": "2026-10-06T20:09:13.3400000",
-      "id": 6804366522642640777
-    },
-    {
       "title": "Stage - Développeur/se Java - BL Région - Montpellier",
       "location": "Hérault (34)",
       "snippet": "...prévisionnelle :  entre janvier et avril 2027. \r\n Les apports du stage : \r\n~ Acquérir des compétences techniques avec nos experts....  ...feront la différence !\r\n Étudiant/e en école d'Ingénieurs, Master informatique ou formation équivalente, vous êtes à la recherche d'un stage...",
@@ -79,16 +55,16 @@
       "id": -1702669942358901583
     },
     {
-      "title": "Stage de fin d'étude - Software Engineer - F/H",
-      "location": "Bordeaux",
-      "snippet": "Stage de 6 mois à pourvoir au 1er trimestre 2027. \r\nGratification : 1400 euros mensuel brut \r\n \r\nEn tant que Stagiaire développeur ou développeuse Fullstack - F/H : \r\n \r\nContribuer au développement d'applications web (front et back). \r\nParticiper aux choix techniques et...",
-      "salary": "1 400 €",
-      "source": "pmejob.fr",
-      "type": "Stage",
-      "link": "https://fr.jooble.org/desc/6192728070663495394",
-      "company": "IPPON Technologies",
-      "updated": "2026-11-16T00:00:00.0000000",
-      "id": 6192728070663495394
+      "title": "STAGE - Développeur d'application web H/F/X",
+      "location": "Finistère (29)",
+      "snippet": "Stage de 4 à 6 mois à pourvoir à compter d'avril sur Brest \n\nVous serez intégré dans la Squad Compensation, une équipe de 12 collaborateurs organisée en mode Agile pour la gestion de son périmètre de produits.\n\nCette équipe a en charge :\nla gestion des échanges interbancaires...",
+      "salary": "",
+      "source": "capcampus.com",
+      "type": "Intérimaire",
+      "link": "https://fr.jooble.org/jdp/-7329234523176328264",
+      "company": "CREDIT MUTUEL ARKEA",
+      "updated": "2026-11-17T00:00:00.0000000",
+      "id": -7329234523176328264
     },
     {
       "title": "Stage Développeur(euse)",
@@ -111,20 +87,8 @@
       "type": "Stage",
       "link": "https://fr.jooble.org/desc/-3689986712882933286",
       "company": "Univers de Laure",
-      "updated": "2026-11-16T00:00:00.0000000",
+      "updated": "2026-11-23T00:00:00.0000000",
       "id": -3689986712882933286
-    },
-    {
-      "title": "Stage - Développeur RPA UI Path H/F",
-      "location": "Paris 15e",
-      "snippet": "...Compétences recherchées  Algorithmie / Processus / Tests / Logs / IA / Rigueur / Sens de l’écoute / Force de proposition  Outils informatiques  UI Path / SharePoint / Langages de programmation (Python, VBA, SQL, etc.) / Automatisations no-code (Make, Zapier, etc.)...",
-      "salary": "",
-      "source": "groupecreditagricole.jobs",
-      "type": "",
-      "link": "https://fr.jooble.org/jdp/-3703742982869717362",
-      "company": "Amundi",
-      "updated": "2026-11-13T00:00:00.0000000",
-      "id": -3703742982869717362
     },
     {
       "title": "GALAXION SALT - LYON - STAGIAIRE INGENIEUR DEVELOPPEMENT",
@@ -139,28 +103,27 @@
       "id": 5790895086974779546
     },
     {
-      "title": "Stage - Développeur Microsoft Dynamics 365 F/H",
-      "location": "Rhône (69)",
-      "snippet": "Ce que vous allez faire\nAu cours de votre stage, vous serez amené(e) à :\n-\nComprendre les enjeux métiers de nos clients et contribuer à la conception de solutions adaptées à leurs besoins ;\n-\nDévelopper des fonctionnalités en C# / .\nNET, HTML/CSS et JavaScript , en veillant...",
+      "title": "Stage - Développeur RPA UI Path H/F",
+      "location": "Paris 15e",
+      "snippet": "...Compétences recherchées  Algorithmie / Processus / Tests / Logs / IA / Rigueur / Sens de l’écoute / Force de proposition  Outils informatiques  UI Path / SharePoint / Langages de programmation (Python, VBA, SQL, etc.) / Automatisations no-code (Make, Zapier, etc.)...",
       "salary": "",
-      "source": "capcampus.com",
-      "type": "Stage",
-      "link": "https://fr.jooble.org/jdp/-3126543646252102384",
-      "company": "ORANGE BUSINESS",
-      "updated": "2026-10-14T00:00:00.0000000",
-      "id": -3126543646252102384
+      "source": "groupecreditagricole.jobs",
+      "type": "",
+      "link": "https://fr.jooble.org/jdp/-3703742982869717362",
+      "company": "Amundi",
+      "updated": "2026-11-13T00:00:00.0000000",
+      "id": -3703742982869717362
     },
     {
-      "title": "STAGE 2027 - Développeur d'applications (f/h)",
-      "location": "Toulouse",
-      "snippet": "...déployer vos ailes ? Et si votre aventure commençait avec nous ? *\n\n*Quel que soit le métier de vos rêves, nous avons peut-être le stage qu'il vous faut !*\n\nVous êtes étudiant(e) et à la recherche d'un *stage *ou d'une *année de césure* vous permettant de valider votre...",
+      "title": "STAGE CONCEPTEUR-TRICE/DÉVELOPPEUR-SE F/H H/F",
+      "location": "Nice",
+      "snippet": "...intégré à l'outil conçu par le CSTB pour la SNCF. \r\nObjectif du stage \r\nL'objectif est de concevoir et de développer un prototype d'...  ...ou en Master, spécialisé(e) en intelligence artificielle, informatique, data science ou dans un domaine équivalent. \r\nCompétences techniques...",
       "salary": "",
-      "source": "aeroemploiformation.com",
-      "type": "Stage",
-      "link": "https://fr.jooble.org/jdp/1225565007704943600",
-      "company": "AIRBUS",
-      "updated": "2026-10-14T00:26:50.9716618+00:00",
-      "id": 1225565007704943600
+      "source": "studyrama-emploi.com",
+      "type": "",
+      "link": "https://fr.jooble.org/jdp/7205579145007142175",
+      "updated": "2026-01-01T00:00:00.0000000",
+      "id": 7205579145007142175
     },
     {
       "title": "Stage - Développeur Logiciel Embarqué (H/F)",
@@ -175,41 +138,6 @@
       "id": 230529856794786167
     },
     {
-      "title": "Développeur java (F/H) - stage",
-      "location": "France",
-      "snippet": "...VOTRE RÔLE ET VOS MISSIONS \r\n Dans le cadre de sa campagne de stage, AXA France recherche un Développeur java (F/H) en stage. \r\n En tant que Software Engineer EIP, vous intégrerez une équipe qui travaille sur la gestion des services utiles pour notre CRM Saleforce, outil...",
-      "salary": "880 € a 1 949 €",
-      "source": "dogfinance.com",
-      "type": "Stage",
-      "link": "https://fr.jooble.org/jdp/-6313960061844015158",
-      "company": "AXA",
-      "updated": "2026-11-14T19:40:32.8400000",
-      "id": -6313960061844015158
-    },
-    {
-      "title": "Stage en Informatique Industrielle F/H",
-      "location": "Lyon",
-      "snippet": "...électricité BT/MT, en automation/ supervision et dans les projets d'informatique industrielle. Groupe 100% familial de 500 collaborateurs, nous...  ...au quotidien pour faire la différence. \r\n L'objectif du stage : Apprentissage, partage et perspectives d'emploi !\r\n Dans un...",
-      "salary": "",
-      "source": "studentjob.fr",
-      "type": "",
-      "link": "https://fr.jooble.org/jdp/6153609095112247731",
-      "updated": "2026-11-04T00:00:00.0000000",
-      "id": 6153609095112247731
-    },
-    {
-      "title": "Développeur fullstack - F/H",
-      "location": "Rennes",
-      "snippet": "...Description de la mission \r\n Contrat : Stage \r\n Lieu : Rennes \r\n Stage de pré-embauche. 4 à 6 mois. \r\n \r\n CONTEXTE ET MISSIONS \r\n Vous rejoindrez l’entité Smart Data de Coexya, composée d’environ 80 personnes, répartie entre Rennes et Lyon, avec des équipes projets stables...",
-      "salary": "",
-      "source": "tekkit.io",
-      "type": "",
-      "link": "https://fr.jooble.org/jdp/-261414594573830953",
-      "company": "Talan",
-      "updated": "2026-10-30T00:00:00.0000000",
-      "id": -261414594573830953
-    },
-    {
       "title": "Stage Développeur Unity application smartphone",
       "location": "Bordeaux",
       "snippet": "Internship Description \r\nRecruitment for this position is now closed.",
@@ -220,6 +148,18 @@
       "company": "Université de Bordeaux",
       "updated": "2026-09-21T00:00:00.0000000",
       "id": -5726846654920221300
+    },
+    {
+      "title": "Développeur java (F/H) - stage",
+      "location": "France",
+      "snippet": "...VOTRE RÔLE ET VOS MISSIONS \r\n Dans le cadre de sa campagne de stage, AXA France recherche un Développeur java (F/H) en stage. \r\n En tant que Software Engineer EIP, vous intégrerez une équipe qui travaille sur la gestion des services utiles pour notre CRM Saleforce, outil...",
+      "salary": "880 € a 1 949 €",
+      "source": "dogfinance.com",
+      "type": "Stage",
+      "link": "https://fr.jooble.org/jdp/-6313960061844015158",
+      "company": "AXA",
+      "updated": "2026-11-14T19:40:32.8400000",
+      "id": -6313960061844015158
     },
     {
       "title": "Offre de Stage : Concepteur(trice) d'Applications...",
@@ -242,43 +182,44 @@
       "type": "Stage",
       "link": "https://fr.jooble.org/desc/-9159171126235464",
       "company": "IPPON Technologies",
-      "updated": "2026-11-16T00:00:00.0000000",
+      "updated": "2026-11-23T00:00:00.0000000",
       "id": -9159171126235464
     },
     {
-      "title": "Stage - Ingénieur(e) DevOps - Toulon",
-      "location": "Var (83)",
-      "snippet": "...Votre rôle et vos missions : \r\n Vous intervenez sur un projet informatique à forts enjeux pour un acteur majeur du domaine naval. Au sein...  ...de développement et de déploiement. \r\n Dans le cadre de votre stage, vous êtes accueilli/e dans les locaux Sopra Steria au sein d'...",
+      "title": "Stage 2027 - Stage en outillage de monitoring plateforme IT (h/f)",
+      "location": "Toulouse",
+      "snippet": "...Quel que soit le métier de vos rêves, nous avons peut-être le stage qu'il vous faut !*\n\nVous êtes étudiant(e) et à la recherche d'...  ...Vous êtes actuellement en Bac+5 (école d'ingénieur ou Master informatique) en Ingénierie Système, Technologies IT, Sécurité/Cybersécurité...",
       "salary": "",
-      "source": "talents-handicap.com",
+      "source": "aeroemploiformation.com",
       "type": "Stage",
-      "link": "https://fr.jooble.org/jdp/8101399511872643671",
-      "company": "Sopra Steria",
-      "updated": "2026-10-19T16:38:16.6070000",
-      "id": 8101399511872643671
+      "link": "https://fr.jooble.org/jdp/-8799929197865834869",
+      "company": "AIRBUS",
+      "updated": "2026-11-20T01:26:51.6998333+00:00",
+      "id": -8799929197865834869
     },
     {
-      "title": "Stage - Développeur/euse Java - Aix-en-Provence",
-      "location": "Bouches-du-Rhône (13)",
-      "snippet": "...conduite de projets de développement. \r\nDans le cadre de votre stage, vous êtes accueilli/e dans les locaux Sopra Steria au sein d'...  ...la différence !\r\nÉtudiant/e en école d'Ingénieurs, Master Informatique ou formation équivalente, vous êtes à la recherche d'un stage...",
+      "title": "Stage - concepteur développeur pbim F/H",
+      "location": "Courbevoie, 92400",
+      "snippet": "...expression de leur besoin jusqu'à la mise en production de leurs solutions décisionnelles. \r\n Missions confiées : \r\n Au cours de votre stage, vous participerez à plusieurs projets transverses autour de la valorisation et de l'exploitation des données de la plateforme Power...",
       "salary": "",
-      "source": "talents-handicap.com",
-      "type": "Stage",
-      "link": "https://fr.jooble.org/jdp/7423374347393850662",
-      "company": "Sopra Steria",
-      "updated": "2026-10-26T14:38:17.8400539+00:00",
-      "id": 7423374347393850662
-    },
-    {
-      "title": "Stagiaire Développeur d'Application & Assurance Qualité [QA] H/F",
-      "location": "Strasbourg",
-      "snippet": "...Le poste \r\n La mission : \r\n? Stagiaire Développeur d'Application & Assurance Qualité [QA] H/F \r\nRéf : STAGE-DEV-QA-2M-26\r\nType : Stage académique conventionné obligatoire - Stage non rémunéré - Durée : 2 mois maximum - Dates flexibles \r\nLocalisation : Télétravail intégral...",
-      "salary": "",
-      "source": "studyrama-emploi.com",
+      "source": "tekkit.io",
       "type": "",
-      "link": "https://fr.jooble.org/jdp/3564584012207917949",
-      "updated": "2026-07-25T00:00:00.0000000",
-      "id": 3564584012207917949
+      "link": "https://fr.jooble.org/jdp/-1779965095179357240",
+      "company": "Enedis",
+      "updated": "2026-11-20T17:07:34.1600000",
+      "id": -1779965095179357240
+    },
+    {
+      "title": "Stage - Développeur Microsoft Dynamics 365 F/H",
+      "location": "Rhône (69)",
+      "snippet": "Ce que vous allez faire\nAu cours de votre stage, vous serez amené(e) à :\n-\nComprendre les enjeux métiers de nos clients et contribuer à la conception de solutions adaptées à leurs besoins ;\n-\nDévelopper des fonctionnalités en C# / .\nNET, HTML/CSS et JavaScript , en veillant...",
+      "salary": "",
+      "source": "capcampus.com",
+      "type": "Stage",
+      "link": "https://fr.jooble.org/jdp/-3126543646252102384",
+      "company": "ORANGE BUSINESS",
+      "updated": "2026-10-14T00:00:00.0000000",
+      "id": -3126543646252102384
     },
     {
       "title": "Stage - Technicien Support informatique - 6 mois (F/H)",
@@ -293,28 +234,63 @@
       "id": -6497753622302452542
     },
     {
-      "title": "Stage - Technicien - Développeur Web - (H/F)",
-      "location": "Cannes, Alpes-Maritimes",
-      "snippet": "...concertée, et organisée autour de jalons à tenir.\n\nVotre profil\n\nStage - Technicien - Développeur Web - (H/F)\n\nVotre priorité est de...  ...?\n\n\nIssu d'une formation de niveau BAC+3 à dominante informatique, avec une spécialisation en développement web, vous recherchez...",
+      "title": "Stage - Développeur/se Java - Biot",
+      "location": "Alpes-Maritimes (06)",
+      "snippet": "...conduite de projets de développement. \r\nDans le cadre de votre stage, vous êtes accueilli/e dans les locaux Sopra Steria au sein d'...  ...la différence !\r\nÉtudiant/e en école d'Ingénieurs, Master Informatique ou formation équivalente, vous êtes à la recherche d'un stage...",
       "salary": "",
-      "source": "aeroemploiformation.com",
+      "source": "talents-handicap.com",
       "type": "Stage",
-      "link": "https://fr.jooble.org/jdp/2170830122641006872",
-      "company": "THALES",
-      "updated": "2026-11-03T01:26:53.9610147+00:00",
-      "id": 2170830122641006872
+      "link": "https://fr.jooble.org/jdp/697905616727052106",
+      "company": "Sopra Steria",
+      "updated": "2026-10-26T14:38:17.2118031+00:00",
+      "id": 697905616727052106
     },
     {
-      "title": "Stage Informatique : Optimisation du temps de calcul de simulateurs de systèmes embarqués F/H",
-      "location": "Le Plessis-Robinson, Hauts-de-Seine",
-      "snippet": "...autoprotection embarqués au sein des aéronefs.\n\n\nObjectif de votre stage :\n\n\nAppliquer des techniques de HPC (OpenCL, CUDA, MPI, ...)...  ...d'un cycle Ingénieur ou équivalent avec une spécialisation en Informatique.\n\n\nVous possédez des connaissances en programmation et...",
+      "title": "Stagiaire Développeur d'Application & Assurance Qualité [QA] H/F",
+      "location": "Strasbourg",
+      "snippet": "...Le poste \r\n La mission : \r\n? Stagiaire Développeur d'Application & Assurance Qualité [QA] H/F \r\nRéf : STAGE-DEV-QA-2M-26\r\nType : Stage académique conventionné obligatoire - Stage non rémunéré - Durée : 2 mois maximum - Dates flexibles \r\nLocalisation : Télétravail intégral...",
       "salary": "",
-      "source": "aeroemploiformation.com",
+      "source": "studyrama-emploi.com",
+      "type": "",
+      "link": "https://fr.jooble.org/jdp/-4928021149538645634",
+      "updated": "2026-07-25T00:00:00.0000000",
+      "id": -4928021149538645634
+    },
+    {
+      "title": "Stage - Ingénieur(e) DevOps - Toulon",
+      "location": "Var (83)",
+      "snippet": "...Votre rôle et vos missions : \r\n Vous intervenez sur un projet informatique à forts enjeux pour un acteur majeur du domaine naval. Au sein...  ...de développement et de déploiement. \r\n Dans le cadre de votre stage, vous êtes accueilli/e dans les locaux Sopra Steria au sein d'...",
+      "salary": "",
+      "source": "talents-handicap.com",
       "type": "Stage",
-      "link": "https://fr.jooble.org/jdp/1807652493987281556",
-      "company": "MBDA France",
-      "updated": "2026-09-26T00:26:49.8570175+00:00",
-      "id": 1807652493987281556
+      "link": "https://fr.jooble.org/jdp/8101399511872643671",
+      "company": "Sopra Steria",
+      "updated": "2026-10-19T16:38:16.6070000",
+      "id": 8101399511872643671
+    },
+    {
+      "title": "Stage - Développeur fullstack H/F",
+      "location": "Cesson-Sévigné, Ille-et-Vilaine",
+      "snippet": "...développement : développement assisté par l’IA. \r\n1er sujet de stage : \r\n Contexte et objectif  : Afin de faire évoluer un...  ...distribué \r\nVotre profil:\n Profil recherché : \r\n Étudiant(e) en informatique (Bac+4/5) avec de bonnes bases en programmation, souhaitant s'...",
+      "salary": "",
+      "source": "icims.com",
+      "type": "Stage",
+      "link": "https://fr.jooble.org/jdp/-5751067230453811293",
+      "company": "Orange SA",
+      "updated": "2026-11-17T00:00:00.0000000",
+      "id": -5751067230453811293
+    },
+    {
+      "title": "STAGE - Développeur d'application web H/F/X",
+      "location": "Finistère (29)",
+      "snippet": "...Le poste de STAGE - Développeur d'application web H/F/X \r\n Stage de 4 à 6 mois à pourvoir à compter d'avril sur Brest \r\n Vous serez...  ...Cursus : \r\n Vous préparez une formation supérieur en informatique de niveau BAC+3 à BAC+5. \r\n Compétences techniques recherchées...",
+      "salary": "",
+      "source": "ouestfrance-emploi.com",
+      "type": "Intérimaire",
+      "link": "https://fr.jooble.org/jdp/-7093088961718518246",
+      "company": "CREDIT MUTUEL ARKEA",
+      "updated": "2026-11-17T00:00:00.0000000",
+      "id": -7093088961718518246
     },
     {
       "title": "Stage Technicien.ne informatique F/H",
@@ -329,6 +305,18 @@
       "id": -6077725356604726028
     },
     {
+      "title": "Développeur junior - h/f",
+      "location": "Reims",
+      "snippet": "...Claude Code, Copilot)\r\nProfil recherché :\n  Diplômé(e) d’une formation supérieure en informatique (Bac+5), vous justifiez d'une première expérience en développement web acquise lors d'un stage, d'une alternance ou d'un premier emploi. \r\n Nous recherchons avant tout une...",
+      "salary": "",
+      "source": "softy.pro",
+      "type": "Temps plein",
+      "link": "https://fr.jooble.org/jdp/-4713117638719686369",
+      "company": "Akanea",
+      "updated": "2026-11-23T16:05:10.9253432+00:00",
+      "id": -4713117638719686369
+    },
+    {
       "title": "Stage Développeur Java (F/H)",
       "location": "Canton de Lille-Nord",
       "snippet": "...Description de la mission \r\n⭐ Stage – Développeur JAVA (F/H) - Lille ⭐\r\n Contexte \r\n Tu rêves d’un stage où tu peux monter en compétences sur des technologies modernes, être accompagné(e) d’un tuteur bienveillant et à l’écoute et de rejoindre une communauté conviviale...",
@@ -341,16 +329,28 @@
       "id": -8543842180559553922
     },
     {
-      "title": "Analyste développeur (H/F)",
-      "location": "Châteauroux, Indre",
-      "snippet": "...des utilisateurs \r\n \r\n  PROFIL \r\n Diplôme  de  niveau  Bac+2  minimum  en  développement  informatique \r\n Expérience  d'au  moins  un  an    en  développement  d'applications (stages  et  alternance  compris)\r\n Python  et  programmation orientée objet \r\n Django \r\n SQL...",
+      "title": "Stage - Développeur : conception d’un orchestrateur multiprotocolaire H/F",
+      "location": "Cesson-Sévigné, Ille-et-Vilaine",
+      "snippet": "Votre rôle:\n Conception & implémentation d'un orchestrateur multiprotocolaire durci dans un contexte IoT \r\n Le stage s’inscrit dans la conception d’une brique logicielle autonome chargée de faire le lien entre différents systèmes orienté sûreté (bornes, lecteurs de badges...",
       "salary": "",
-      "source": "jobpublic.fr",
-      "type": "Temps plein",
-      "link": "https://fr.jooble.org/jdp/4763240282728514456",
-      "company": "Département de l'Indre",
-      "updated": "2026-10-20T12:22:33.6344513+00:00",
-      "id": 4763240282728514456
+      "source": "icims.com",
+      "type": "Stage",
+      "link": "https://fr.jooble.org/jdp/9047185633972829679",
+      "company": "Orange SA",
+      "updated": "2026-11-16T00:00:00.0000000",
+      "id": 9047185633972829679
+    },
+    {
+      "title": "Stage - Technicien - Développeur Web - (H/F)",
+      "location": "Cannes, Alpes-Maritimes",
+      "snippet": "...concertée, et organisée autour de jalons à tenir.\n\nVotre profil\n\nStage - Technicien - Développeur Web - (H/F)\n\nVotre priorité est de...  ...?\n\n\nIssu d'une formation de niveau BAC+3 à dominante informatique, avec une spécialisation en développement web, vous recherchez...",
+      "salary": "",
+      "source": "aeroemploiformation.com",
+      "type": "Stage",
+      "link": "https://fr.jooble.org/jdp/2170830122641006872",
+      "company": "THALES",
+      "updated": "2026-11-03T01:26:53.9610147+00:00",
+      "id": 2170830122641006872
     },
     {
       "title": "Stagiaire Administrateur.rice Systèmes et Réseaux H/F",
