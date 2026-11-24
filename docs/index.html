@@ -18,6 +18,17 @@
   .empty-note { padding: 0.8rem 1rem; border: 1px dashed #999; border-radius: 8px; color: #555; font-size: 0.9rem; }
   canvas { margin-top: 1rem; }
   #updated { color: #666; font-size: 0.85rem; margin-top: 2rem; }
+  .sliders { display: flex; flex-direction: column; gap: 0.9rem; margin: 1rem 0 1.5rem; }
+  .slider-row { display: grid; grid-template-columns: 13rem 1fr 3rem; align-items: center; gap: 0.8rem; }
+  .slider-row label { font-size: 0.9rem; }
+  .slider-row input[type=range] { width: 100%; }
+  .slider-row .val { font-size: 0.85rem; color: #0d7c9e; font-weight: bold; text-align: right; }
+  table.rank { width: 100%; border-collapse: collapse; margin-top: 0.5rem; font-size: 0.85rem; }
+  table.rank th, table.rank td { text-align: left; padding: 0.4rem 0.5rem; border-bottom: 1px solid #ddd; }
+  table.rank th { background: #f5f5f5; }
+  .badge { display: inline-block; font-size: 0.7rem; padding: 0.05rem 0.4rem; border-radius: 4px; margin-right: 0.2rem; }
+  .badge.yes { background: #e3f3e6; color: #2e8b46; }
+  .badge.no { background: #f1f1f1; color: #999; }
 </style>
 </head>
 <body>
@@ -53,6 +64,22 @@
     <div style="flex:1; min-width:320px;"><canvas id="gapsChart" height="260"></canvas></div>
     <div style="flex:1; min-width:320px;"><canvas id="matchedChart" height="260"></canvas></div>
   </div>
+
+  <h2>Rank offers your way</h2>
+  <div class="section-for">For: me, deciding which offer to actually prioritize right now</div>
+  <p>The match <code>score</code> above is one fixed formula (skill coverage + my level). But which offer I'd
+     actually chase first also depends on things that formula doesn't weigh at all — whether they state pay
+     up front, whether it's an alternance, whether they demand prior experience I don't have. These sliders
+     let me set how much each one matters <em>to me, right now</em>, and re-rank every real offer instantly —
+     nothing here is recomputed on the server, it's the same <code>matches.json</code> data, just re-sorted
+     by a personal formula I control. Saved in this browser only (not published, not shared between devices).</p>
+  <div class="sliders" id="sliders">
+    <div class="slider-row"><label for="wSkill">Skill match (the real score)</label><input type="range" id="wSkill" min="0" max="100" value="60"><span class="val" id="wSkillVal">60</span></div>
+    <div class="slider-row"><label for="wComp">Pay stated up front</label><input type="range" id="wComp" min="0" max="100" value="20"><span class="val" id="wCompVal">20</span></div>
+    <div class="slider-row"><label for="wAppr">Prefer alternance</label><input type="range" id="wAppr" min="0" max="100" value="10"><span class="val" id="wApprVal">10</span></div>
+    <div class="slider-row"><label for="wExp">No stated experience barrier</label><input type="range" id="wExp" min="0" max="100" value="10"><span class="val" id="wExpVal">10</span></div>
+  </div>
+  <div id="rankTableArea"></div>
 
   <h2>Outcome</h2>
   <div class="section-for">For: me, deciding whether to keep applying the same way or change approach</div>
@@ -108,6 +135,58 @@ Promise.all([fetch('data/matches.json').then(r => r.json()), fetch('data/outcome
       data: { labels: matched.map(m => `${m.skill} (my level ${m.level}/5)`), datasets: [{ label: 'Offers matching this', data: matched.map(m => m.count), backgroundColor: '#2e8b46' }] },
       options: { indexAxis: 'y', plugins: { legend: { display: false }, title: { display: true, text: 'Top matched strengths' } } },
     });
+
+    // --- Rank offers your way (client-side personalization, not a re-run of the KPI) ---
+    const SLIDER_IDS = ['wSkill', 'wComp', 'wAppr', 'wExp'];
+    function loadSavedWeights() {
+      try {
+        const saved = JSON.parse(localStorage.getItem('tp1_rank_weights') || 'null');
+        if (saved) SLIDER_IDS.forEach(id => { if (id in saved) document.getElementById(id).value = saved[id]; });
+      } catch (e) { /* localStorage unavailable (private window, blocked) -- fine, just use defaults */ }
+    }
+    function saveWeights(weights) {
+      try { localStorage.setItem('tp1_rank_weights', JSON.stringify(weights)); } catch (e) { /* ignore */ }
+    }
+
+    function renderRanking() {
+      const w = {};
+      SLIDER_IDS.forEach(id => {
+        const v = parseInt(document.getElementById(id).value, 10);
+        w[id] = v;
+        document.getElementById(id + 'Val').textContent = v;
+      });
+      saveWeights(w);
+      const total = w.wSkill + w.wComp + w.wAppr + w.wExp;
+
+      const ranked = offers.map(o => {
+        const hasComp = !!o.compensation_mentioned;
+        const isAppr = !!o.is_apprenticeship;
+        const noExpBarrier = !o.experience_required;
+        const personal = total > 0
+          ? (w.wSkill * o.score + w.wComp * (hasComp ? 1 : 0) + w.wAppr * (isAppr ? 1 : 0) + w.wExp * (noExpBarrier ? 1 : 0)) / total
+          : 0;
+        return { o, personal, hasComp, isAppr, noExpBarrier };
+      }).sort((a, b) => b.personal - a.personal);
+
+      const rows = ranked.slice(0, 10).map(r => `
+        <tr>
+          <td>${r.o.title}</td><td>${r.o.company || ''}</td>
+          <td>${r.personal.toFixed(2)}</td><td>${r.o.score.toFixed(2)}</td>
+          <td>
+            <span class="badge ${r.hasComp ? 'yes' : 'no'}">pay ${r.hasComp ? '✓' : '—'}</span>
+            <span class="badge ${r.isAppr ? 'yes' : 'no'}">alternance ${r.isAppr ? '✓' : '—'}</span>
+            <span class="badge ${r.noExpBarrier ? 'yes' : 'no'}">no exp. bar ${r.noExpBarrier ? '✓' : '—'}</span>
+          </td>
+        </tr>`).join('');
+      document.getElementById('rankTableArea').innerHTML = `
+        <table class="rank">
+          <thead><tr><th>Title</th><th>Company</th><th>My ranking</th><th>Match score</th><th>Criteria met</th></tr></thead>
+          <tbody>${rows}</tbody>
+        </table>`;
+    }
+    loadSavedWeights();
+    SLIDER_IDS.forEach(id => document.getElementById(id).addEventListener('input', renderRanking));
+    renderRanking();
 
     // --- Outcome ---
     document.getElementById('outcomeKpis').innerHTML = `
