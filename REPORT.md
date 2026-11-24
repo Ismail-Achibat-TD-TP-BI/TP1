@@ -118,6 +118,27 @@ to the chart it belongs to — summarized here:
   misleading all-zero chart — a direct lesson carried over from a real empty-dashboard
   problem hit earlier in this course (TD2).
 
+## 5b. A second, personal ranking layer — sliders (CM1/CM2)
+
+`score_offer()`'s score stays the one fixed, documented KPI — but which offer I'd
+actually chase first also depends on things that formula never weighs at all: whether
+pay is stated up front, whether it's an alternance, whether prior experience is
+explicitly demanded. Rather than fold these into the "official" score (which would make
+it a moving target, and harder to defend as one formula), the dashboard adds a separate
+**client-side re-ranking tool**: four sliders (skill match / pay disclosed / alternance /
+no stated experience barrier), defaulting to 60/20/10/10, that recompute a personal
+score for all 30 real offers live, with zero server round-trip — it's the same
+`matches.json`, just re-sorted by a formula I control, saved only in this browser's
+local storage (never published, never shared between devices).
+
+**Verified it actually re-ranks, not just redecorates**: with all weight forced onto
+"pay disclosed," the #1 result flips to the one real offer that actually states a
+compensation figure, completely different from the skill-based leaderboard. This is
+deliberately a second, separate layer rather than a parameter inside `score_offer()`
+itself — the graded KPI stays one explainable formula; personal priorities live in the
+UI, where CM1's "the dashboard supports the decision, it doesn't make it" principle
+says they belong.
+
 ## 6. Monitoring (CM4, Stage 6)
 
 **My design decision:** a green "Fetch succeeded" checkmark in the Actions tab doesn't
@@ -138,11 +159,28 @@ required real runs.
 
 ## 7. What's still open
 
-- **GitHub repo, Secrets, Pages** not yet created — same manual sign-off step as every
-  other project this term.
-- **`data/applications/tracker.csv`** is currently empty (template only) — the outcome
-  chart and the "response rate by score bracket" KPI will only become real once actual
-  applications are sent and logged by hand.
+- **Repo is live**: `github.com/Ismail-Achibat-TD-TP-BI/TP1`, Pages serving the dashboard
+  at `ismail-achibat-td-tp-bi.github.io/TP1/`, `JOOBLE_API_KEY` set as a Secret, the
+  weekly `fetch_offers_jooble.py` workflow has already run automatically more than once.
+- **Real outcome tracking has started**: 2 applications genuinely sent (BPCE Infogérance
+  & Technologies, score 0.92; Crédit Agricole, score 0.76), both `status: sent`, neither
+  has responded yet — `overall_response_rate` is honestly `0.0` (a real zero out of 2,
+  not the earlier "no data" `null`). The "response rate by score bracket" chart will only
+  become genuinely informative once more applications accumulate across different
+  brackets — right now both tracked ones sit in the same (0.6-1.0) bracket.
+- **A real encoding bug was caught and fixed**: the hand-edited tracker CSV was saved as
+  ISO-8859-1, not UTF-8, by the editor — `compute_outcomes.py` now tries UTF-8 first and
+  falls back to Latin-1 rather than crashing. A separate data-entry mistake (a literal
+  `"_"` placeholder in `response_date`, which is non-empty and so was silently counted as
+  "responded") was caught by inspection and corrected by hand — worth stating honestly,
+  since it's exactly the kind of error a plain CSV a human edits is prone to, and exactly
+  why the aggregate script needs to stay simple enough to audit by eye.
+- **`raw_offers.json` has moved ahead of the analysis**: the weekly Jooble fetch keeps
+  running and committing fresh offers, but `merge/extract/match` (the Ollama-dependent,
+  local-only steps) haven't been re-run since the original 30-offer batch — so
+  `docs/data/matches.json` reflects that original fetch, not the latest raw data. This is
+  a real, known gap: the pipeline's cloud half is more current than its local half,
+  because only the cloud half can run unattended on a schedule.
 - **France Travail access**: if it gets resolved later, it could be reintroduced as a
   genuine second official source (replacing `jobspy`'s slot), giving this pipeline a
   real multi-source acquisition stage it currently lacks.
